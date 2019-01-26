@@ -23,8 +23,8 @@ export function HomeScreen() {
   Navigation.setRoot({
       root: {
         component: {
-          name: HOME_SCREEN
-        }
-      }
+          name: HOME_SCREEN,
+        },
+      },
   });
 }
