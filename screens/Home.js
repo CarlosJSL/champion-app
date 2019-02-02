@@ -2,15 +2,8 @@ import React, { Component } from 'react';
 import {StyleSheet, View, TouchableOpacity, Text, Image, ImageBackground} from 'react-native';
 
 export default class HomeScreen extends Component {
-
+    
     render() {
-        const data = [
-            { quarter: 1, earnings: 13000 },
-            { quarter: 2, earnings: 16500 },
-            { quarter: 3, earnings: 14250 },
-            { quarter: 4, earnings: 19000 }
-          ];
-          
 
         return (
             <View style={styles.container}>
@@ -20,7 +13,7 @@ export default class HomeScreen extends Component {
                         <Text style={styles.titleInfo} >Carlos José</Text>
                         <Text style={styles.titleInfo}>Brazil, 21 years</Text>
                         <TouchableOpacity style={styles.formButton}>
-                        <Text style={styles.textButton}>Edit </Text>
+                            <Text style={styles.textButton}>Edit </Text>
                         </TouchableOpacity>
                     </View>
                 </ImageBackground>
@@ -74,7 +67,7 @@ export default class HomeScreen extends Component {
                                 183cm
                             </Text>
                             <Text style={styles.labelInfo}>
-                                Alturaa
+                                Altura
                             </Text>
                         </View>
                     </View>
