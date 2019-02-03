@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import {StyleSheet, View, TouchableOpacity, Text, Image, ImageBackground} from 'react-native';
 import Carousel from 'react-native-snap-carousel';
-import Video from 'react-native-video';
+import VideoPlayer from 'react-native-video-controls';
 
 export default class ExercisesScreen extends Component {
     _renderItem ({item, index}) {
         return (
             <View style={styles.slide}>
                 <View style={styles.exerciseVideo}>
-                    <Video source={{uri: "youtu.be/uXZqW6avhgM"}}
+                    <VideoPlayer source={{uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"}}
                         ref={(ref) => {
                             this.player = ref
                         }}
-                        onBuffer={this.onBuffer}
-                        onError={this.videoError}
+                        paused={true}
+                        disableBack="true"
                         style={styles.backgroundVideo} />
                 </View>
                 <View style={styles.exerciseContainer}>
