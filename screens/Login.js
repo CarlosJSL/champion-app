@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, View, TouchableOpacity, TextInput, Text, ImageBackground} from 'react-native';
-import { HomeScreen } from '../navigation/Navigation';
+import { HomeScreen, singUpScreen } from '../navigation/Navigation';
 
 
 type Props = {};
@@ -12,13 +12,13 @@ export default class Login extends Component<Props> {
   }
   
   signUp() { 
-
+    singUpScreen();
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <ImageBackground style={styles.mainImage} source={require('../assets/images/woman.jpg')} >
+        <ImageBackground style={styles.mainImage} source={require('../assets/images/man.jpg')} >
           <Text style={styles.title}>Champion</Text>
           <View style={styles.form}>
             <TextInput style={styles.formInput} placeholderTextColor="white" placeholder="Email" ></TextInput>

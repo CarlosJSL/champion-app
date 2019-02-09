@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import { trainingsScreen } from '../navigation/Navigation';
-import { HomeScreen } from '../navigation/Navigation';
+import { HomeScreen, trainingsScreen, chatScreen } from '../navigation/Navigation';
 
 export default class SideDrawer extends Component {
 
@@ -10,7 +9,7 @@ export default class SideDrawer extends Component {
         return (
             <View style={styles.container}> 
                 <View style={styles.perfil}>
-                    <Image style={styles.perfilImage} source={require('../assets/images/woman.jpg')} />
+                    <Image style={styles.perfilImage} source={require('../assets/images/man.jpg')} />
                     <Text style={styles.perfilInfoText} > Carlos Jose</Text>
                     <Text style={styles.perfilInfoText}> 074.692.124-18</Text>
                 </View>
@@ -21,8 +20,8 @@ export default class SideDrawer extends Component {
                     <TouchableOpacity style={styles.menuOption} onPress={() => trainingsScreen()}>
                         <Text style={styles.menuOptionText}>Treinos</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.menuOption} onPress={() => exercisesScreen()}>
-                        <Text style={styles.menuOptionText}>Daily</Text>
+                    <TouchableOpacity style={styles.menuOption} onPress={() => chatScreen()}>
+                        <Text style={styles.menuOptionText}>Chat</Text>
                     </TouchableOpacity>
                 </View> 
             </View>

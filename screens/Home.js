@@ -9,7 +9,7 @@ export default class HomeScreen extends Component {
             <View style={styles.container}>
                 <ImageBackground style={styles.perfilBackImage} blurRadius={2} source={require('../assets/images/man.jpg')} >
                     <View style={styles.perfil}>
-                        <Image style={styles.perfilImage} source={require('../assets/images/woman.jpg')} />
+                        <Image style={styles.perfilImage} source={require('../assets/images/man.jpg')} />
                         <Text style={styles.titleInfo} >Carlos José</Text>
                         <Text style={styles.titleInfo}>Brazil, 21 years</Text>
                         <TouchableOpacity style={styles.formButton}>

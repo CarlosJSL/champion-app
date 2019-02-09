@@ -10,7 +10,7 @@ export default class TrainningsScreen extends Component {
                 <View style={styles.trainnings}>
                     <TouchableOpacity onPress={() => exercisesScreen()}>
                         <View style={styles.trainning}>
-                            <Image style={styles.trainningImage} source={require('../assets/images/woman.jpg')}/>
+                            <Image style={styles.trainningImage} source={require('../assets/images/man.jpg')}/>
                             <Text style={styles.trainningLabel}> Abdomen, perna</Text>
                             <Text style={styles.trainningType}>B</Text>
                         </View>

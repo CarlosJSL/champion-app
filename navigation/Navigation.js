@@ -6,6 +6,8 @@ import {
   LOGIN_SCREEN,
   TRAINNINGS_SCREEN,
   EXERCISES_SCREEN,
+  SIGNUP_SCREEN,
+  CHAT_SCREEN,
 } from './Screens';
 
 import registerScreens from './registerScreens';
@@ -17,6 +19,16 @@ export function loginScreen() {
     root: {
       component: {
         name: LOGIN_SCREEN
+      }
+    }
+  });
+}
+
+export function singUpScreen() {
+  Navigation.setRoot({
+    root: {
+      component: {
+        name: SIGNUP_SCREEN
       }
     }
   });
@@ -45,6 +57,12 @@ export function HomeScreen() {
                 component: { 
                   id:"TrainingsScreen",
                   name: TRAINNINGS_SCREEN 
+                },
+              },
+              {
+                component: { 
+                  id:"ChatScreen",
+                  name: CHAT_SCREEN 
                 },
               },
               {
@@ -99,6 +117,24 @@ export function exercisesScreen() {
         topBar: {
           title: {
             text: 'Exercicios'
+          },
+          background: {
+            color: '#8431ED'
+          }
+        }
+      }
+    }
+  })
+}
+
+export function chatScreen() {
+  Navigation.push("ChatScreen", {
+    component: {
+      name: CHAT_SCREEN,
+      options: {
+        topBar: {
+          title: {
+            text: 'Chat'
           },
           background: {
             color: '#8431ED'
